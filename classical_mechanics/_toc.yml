@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+
+  - caption: Preliminaries
+    chapters:
+    - file: preliminaries
+
+  - caption: Classical Mechanics Part 1
+    chapters:   
+    - glob: content/Chapter_1/*
+    - glob: content/Chapter_2/*
+    - glob: content/Chapter_3/*
+    - glob: content/Chapter_4/*
+
+  - caption: References
+    chapters:
+    - file: references
