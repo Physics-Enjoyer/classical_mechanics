@@ -3,6 +3,8 @@
 
 title: Classical Mechanics
 author: A Physics Enjoyer
+copyright: "2023"  # Copyright year to be placed in the footer
+
 # logo: 
 
 # Force re-execution of notebooks on each build.
