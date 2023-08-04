@@ -4,7 +4,7 @@ Notes for some physics classes. Here are the notes for some of my physics classe
 
 ## Usage
 
-More info to come. 
+
 
 ### Building the book
 
