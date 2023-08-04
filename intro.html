@@ -61,9 +61,10 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Preliminaries" href="preliminaries.html" />
+    <link rel="next" title="Preliminaries" href="content/preliminaries.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -150,16 +151,22 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Preliminaries</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="preliminaries.html">Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/preliminaries.html">Preliminaries</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical Mechanics Part 1</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="content/Chapter_1/1_Newtons_Laws.html">Newton’s Laws of Motion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content/Chapter_1/2_Laws1and2.html">Newton’s First and Second Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content/Chapter_2/1_Projectiles.html">Projectiles and Charged Particles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content/Chapter_2/2_air_resistance.html">Air Resistance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content/Chapter_3/1_Momentum.html">Momentum and Angular Momentum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="content/Chapter_4/1_energy.html">Energy</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/chapter01/chapter1-introduction.html">Chapter 1: Newton’s Laws of Motion</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/chapter01/1_Newtons_Laws.html">Newton’s Laws of Motion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/chapter01/2_Laws1and2.html">Newton’s First and Second Laws</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/chapter02/chapter2-introduction.html">Chapter 2: Projectiles and Charged Paricles</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/chapter02/1_Projectiles.html">Projectiles and Charged Particles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/chapter02/2_air_resistance.html">Air Resistance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="content/chapter03/chapter3-introduction.html">Chapter 3: Momentum and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/chapter04/chapter4-introduction.html">Chapter 4: Energy</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
 <ul class="nav bd-sidenav">
@@ -361,16 +368,35 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<!--- TODO: fis this part --->
+<p>A very good knowledge of calculus in one and multiple variables is needed, as well as linear algebra: basis, vectors, change of basis, diagonalization, eigenvectors and eigenvalues. This is the basic which is needed to understand basic physics concepts of classical mechanics and ED; further mathematical methods will be taught during the courses and will be needed to (try to) understand qm and approach qft in eventual major studies</p>
+<p>and differential equations</p>
+<!--- end here --->
 <p>These are my notes for undergraduate Classical Mechanics. I’ll add a bunch more stuff here later I think but for now this is about it. This document is being created using notes from the classical mechanics classes I took as well as from the book Classical Mechanics by John R. Taylor <span id="id1">[<a class="reference internal" href="references.html#id2" title="John R. Taylor. Classical Mechanics. University Science Books, Sausalito, CA, 1st edition, 2005. ISBN 9781891389221.">Tay05</a>]</span> with some supplementary material from the book Classical Mechanics of Particles and Systems by Thornton and Marion. <span id="id2">[<a class="reference internal" href="references.html#id4" title="Stephen T. Thornton and Jerry B. Marion. Classical Mechanics of Particles and Systems. Brooks Cole, Belmont, CA, 5th edition, 2004. ISBN 9780534408961.">TM04</a>]</span></p>
 <p>This is a combination of 2 classes and those 2 classes cover chapters 1-11, and chapter 15 in Taylor.</p>
 <p>The goal of Classical Mechanics is to learn to think in a more advanced way. We will begin by reviewing some basic stuff from introductory physics but solving them in possibly a more sophisticated manner or by removing some assumptions that we made in introductory physics. For example in many problems we will no longer ignore air resistance or friction.</p>
 <p>The other important bit about these notes is that they are written almost entirely in Jupyter Notebooks. This means that we can more easily make plots and solve problems numerically. This is done with the python libraries <code class="docutils literal notranslate"><span class="pre">numpy</span></code>,
 <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, and <code class="docutils literal notranslate"><span class="pre">scipy</span></code>. We can also sometimes solve some problems analytically with the <code class="docutils literal notranslate"><span class="pre">sympy</span></code> library and aside from markdown (and LaTeX) we can use the <code class="docutils literal notranslate"><span class="pre">display</span></code> function and <code class="docutils literal notranslate"><span class="pre">Math</span></code> class from <code class="docutils literal notranslate"><span class="pre">IPython.display</span></code> to render nice looking equations.</p>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Preliminaries</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="content/preliminaries.html">Preliminaries</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Classical Mechanics Part 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="content/chapter01/chapter1-introduction.html">Chapter 1: Newton’s Laws of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/chapter02/chapter2-introduction.html">Chapter 2: Projectiles and Charged Paricles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/chapter03/chapter3-introduction.html">Chapter 3: Momentum and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/chapter04/chapter4-introduction.html">Chapter 4: Energy</a></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
 </div>
 </section>
 
@@ -406,7 +432,7 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="preliminaries.html"
+       href="content/preliminaries.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
