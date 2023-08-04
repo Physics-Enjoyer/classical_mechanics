@@ -17,14 +17,12 @@ parts:
     # Chapter 1 content
     - file: content/chapter01/chapter1-introduction
       sections:
-      - file: content/chapter01/1_Newtons_Laws
-      - file: content/chapter01/2_Laws1and2
+      - glob: content/chapter01/*
 
     # Chapter 2 content
     - file: content/chapter02/chapter2-introduction
       sections:
-      - file: content/chapter02/1_Projectiles
-      - file: content/chapter02/2_air_resistance
+      - glob: content/chapter02/*
     
     # Chapter 3 content
     - file: content/chapter03/chapter3-introduction
