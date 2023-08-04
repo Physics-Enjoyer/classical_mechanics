@@ -5,17 +5,36 @@ format: jb-book
 root: intro
 parts:
 
+# Part 1: Prerequisite Knowledge
   - caption: Preliminaries
     chapters:
-    - file: preliminaries
+    - file: content/preliminaries
 
+# Part 2: Chapters 1- ~8
   - caption: Classical Mechanics Part 1
-    chapters:   
-    - glob: content/Chapter_1/*
-    - glob: content/Chapter_2/*
-    - glob: content/Chapter_3/*
-    - glob: content/Chapter_4/*
+    chapters:
 
+    # Chapter 1 content
+    - file: content/chapter01/chapter1-introduction
+      sections:
+      - file: content/chapter01/1_Newtons_Laws
+      - file: content/chapter01/2_Laws1and2
+
+    # Chapter 2 content
+    - file: content/chapter02/chapter2-introduction
+      sections:
+      - file: content/chapter02/1_Projectiles
+      - file: content/chapter02/2_air_resistance
+    
+    # Chapter 3 content
+    - file: content/chapter03/chapter3-introduction
+
+    # Chapter 4 content
+    - file: content/chapter04/chapter4-introduction
+
+# Part 3: Rest of the book
+
+# Part 4: References
   - caption: References
     chapters:
     - file: references
