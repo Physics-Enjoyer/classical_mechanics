@@ -8,7 +8,7 @@ and differential equations
 <!--- end here --->
 
 
-These are my notes for undergraduate Classical Mechanics. I'll add a bunch more stuff here later I think but for now this is about it. This document is being created using notes from the classical mechanics classes I took as well as from the book Classical Mechanics by John R. Taylor {cite:p}`taylor2005classical` with some supplementary material from the book Classical Mechanics of Particles and Systems by Thornton and Marion. {cite}`thornton2004classical`
+These are my notes for undergraduate Classical Mechanics. I'll add a bunch more stuff here later I think but for now this is about it. This document is being created using notes from the classical mechanics classes I took as well as from the book Classical Mechanics by John R. Taylor {cite}`taylor2005classical` with some supplementary material from the book Classical Mechanics of Particles and Systems by Thornton and Marion. {cite}`thornton2004classical`
 
 This is a combination of 2 classes and those 2 classes cover chapters 1-11, and chapter 15 in Taylor. 
 
